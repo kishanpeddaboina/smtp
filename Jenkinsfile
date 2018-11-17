@@ -5,17 +5,9 @@ pipeline {
         stage('SMTP') {
             steps {
                 
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+                sh 'python.exe smtp.py'
+                
+                }
     }
+}
 }
