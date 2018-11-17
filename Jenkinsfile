@@ -5,7 +5,7 @@ pipeline {
         stage('SMTP') {
             steps {
                 
-                sh 'python.exe smtp.py'
+                sh 'python3 smtp.py'
                 
                 }
     }
